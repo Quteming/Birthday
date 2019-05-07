@@ -193,7 +193,7 @@ public class CreateUserActivity extends BaseActivity implements View.OnClickList
                 }
 
                 //保存到本地数据库
-//                Model.getInstance().getDbManger().getUserDAo().saveContact(userBean);
+                Model.getInstance().getDbManger().getUserDAo().saveContact(userBean);
                 int size = MainActivity.userBeanList.size();
                 for (int i = 0; i < size; i++){
                     if (MainActivity.userBeanList.get(i).getId().equals(objectId)){
