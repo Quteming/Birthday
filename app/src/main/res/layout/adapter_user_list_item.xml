@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:longClickable="true"
+    android:paddingHorizontal="15dp"
+    android:paddingVertical="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:src="@drawable/user_photo"
+            android:layout_centerInParent="true"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+        <RelativeLayout
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/item_user_name"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:minWidth="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/item_user_sex"
+                android:src="@drawable/sex_boy"
+                android:layout_toRightOf="@id/item_user_name"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="3dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/item_user_birthday"
+                android:textSize="18sp"
+                android:layout_below="@id/item_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

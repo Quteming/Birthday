@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controll.MainActivity">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:longClickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.example.qtm.birthdates.View.ActionBar
+                android:id="@+id/actionbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </com.example.qtm.birthdates.View.ActionBar>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_user_list"
+                android:layout_below="@id/actionbar"
+                android:overScrollMode="never"
+                android:longClickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <com.example.qtm.birthdates.View.LetterList
+                android:id="@+id/letterlisr"
+                android:layout_below="@id/actionbar"
+                android:layout_alignParentRight="true"
+                android:layout_width="30dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/tv_letterlist_currentletter"
+                android:textSize="40dp"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="10dp"
+                android:background="#80a8a8a8"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+        <fragment
+            android:id="@+id/main_fragment"
+            android:name="com.example.qtm.birthdates.Controll.MainFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start">
+
+        </fragment>
+
+    </android.support.v4.widget.DrawerLayout>
+
+</FrameLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.qtm.birthdates.View.ActionBarBack
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.example.qtm.birthdates.View.ActionBarBack>
+
+    <TextView
+        android:id="@+id/lunar"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:minWidth="100dp"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="点击选择年-月-日"
+        android:id="@+id/solar"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@id/lunar"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textColor="#a8a8a8"
+        android:background="@drawable/stroke_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="阴历: "
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:layout_toLeftOf="@id/lunar"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
